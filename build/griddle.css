@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.griddle {
+  height: calc(100vh - 100px);
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  width: 600px;
+  -ms-grid-rows: 100px 1fr 100px;
+      grid-template-rows: 100px 1fr 100px;
+  -ms-grid-columns: 120px 1fr 120px;
+      grid-template-columns: 120px 1fr 120px;
+}
+.cake {
+  background-color: #edcf9f;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-column-span: 5;
+}
+.cake:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  -ms-grid-row: 1;
+}
+.cake:last-child {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -ms-grid-row: 3;
+}
+.fillings {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: span 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+.fillings > * {
+  border-radius: 8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #EEEEEE;
+  font-family: Impact;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px black;
+}
+.fillings .cheese {
+  background-color: #e4df63;
+  -ms-grid-row: 1;
+}
+.fillings .sausage {
+  background-color: #8f1f1f;
+  -ms-grid-row: 2;
+}
+.fillings .egg {
+  background-color: #fffa71;
+  -ms-grid-row: 3;
+}
