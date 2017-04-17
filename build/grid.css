@@ -8,6 +8,7 @@
   grid-gap: 20px;
   -ms-grid-columns: 2fr 4fr;
       grid-template-columns: 2fr 4fr;
+  width: 900px;
 }
 #wrapper header {
   grid-column: 1 / 3;
