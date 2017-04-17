@@ -1,0 +1,16 @@
+{
+  "name": "CSS-gridlayout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "gulp": "^3.9.1",
+    "gulp-auto-reload": "^0.1.0",
+    "gulp-less": "^3.3.0",
+    "gulp-postcss": "^6.4.0"
+  }
+}
